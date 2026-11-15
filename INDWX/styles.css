@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #5b618c;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #0a0067;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ed7070;
+}
+
+button,
+.main-button {
+    background: #f45c5c;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login {
+    background: transparent;
+    border: 1px solid #89d8ff;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: #0e0e97;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.small {
+    color: #52fffc;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #aaa;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.movies {
+    padding: 10px 8%;
+}
+
+.movies h2 {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.movie-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    background: #3a06f6;
+    padding: 18px;
+    border-radius: 12px;
+    width: 220px;
+}
+
+.poster {
+    height: 220px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.poster-one img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.poster-two img {
+  width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+  
+
+.poster-three img{
+       width: 100%;
+        height: 300px;
+        object-fit: cover;  
+}
+
+.movie-card h3 {
+    margin-bottom: 10px;
+}
+
+.movie-card p {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.movie-card button {
+    width: 100%;
+}
+
+.booking {
+    text-align: center;
+    background: #350cff;
+    margin: 20px 8% 50px;
+    padding: 45px 20px;
+    border-radius: 12px;
+}
+
+.booking h2 {
+    margin-bottom: 15px;
+}
+
+.booking p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #191a25;
+    color: #aaa;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .movie-list {
+        justify-content: center;
+    }
+
+    .movie-card {
+        width: 100%;
+    }
+}
